@@ -1,0 +1,15 @@
+pluginManagement {
+    resolutionStrategy {
+        eachPlugin {
+
+        }
+    }
+    repositories {
+        mavenLocal()
+        maven {
+            url "${nexusUrl}${relativePublicPath}"
+        }
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'general-client'
